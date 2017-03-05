@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: wiki
+  name: wikirc
+spec:
+  replicas: 1 
+  selector:
+    name: wiki
+  template:
+    metadata:
+      labels:
+        name: wiki
+    spec:
+      containers:
+      - image: billyzhang2010/python-pip:latest
+        command: ['/bin/sh', '-c']
+        args: ['cd /home && git clone https://github.com/hustbill/goWiki.git demo && cd demo/mywiki && simiki p -w ']
+        name: wiki
+        ports:
+        - containerPort: 8042
+          name: http-server
