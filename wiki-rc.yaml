@@ -16,7 +16,7 @@ spec:
       containers:
       - image: billyzhang2010/python-pip:latest
         command: ['/bin/sh', '-c']
-        args: ['cd /home && git clone https://github.com/hustbill/goWiki.git demo && cd demo/mywiki && simiki p -w ']
+        args: ['cd goWiKi/mywiki && simiki p -w ']
         name: wiki
         ports:
         - containerPort: 8042
