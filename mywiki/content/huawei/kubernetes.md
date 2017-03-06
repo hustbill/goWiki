@@ -1,7 +1,7 @@
 ---
-title: "Getting Started"
-layout: page
-date: 2099-06-02 00:00
+title: "Kubernetes @ Huawei Cloud"  
+layout: page  
+date: 2017-03-02 00:00
 ---
 
 [TOC]
