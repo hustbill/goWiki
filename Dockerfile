@@ -4,8 +4,12 @@ RUN apt-get update && apt-get install -y python-dev && pip install simiki
 
 RUN apt install git -y
 
-RUN git clone https://hustbill@github.com/hustbill/goWiki.git
+RUN cd /home
 
-EXPOSE 8042
+RUN git clone https://hustbill@github.com/hustbill/goWiki.git demo
 
-CMD ["/bin/bash"]
+EXPOSE 8000
+
+#CMD cd demo/mywiki && simiki g  && simiki p -w  --host 0.0.0.0 --port 8000
+
+#CMD ["/bin/bash"]
