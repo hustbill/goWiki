@@ -1,7 +1,7 @@
 ---
-title: "SQLite 3"
-date: 2015-09-29 19:00
-updated: 2016-04-11 23:33
+title: "kubernetes"
+date: 2016-11-29 19:00
+updated: 2016-12-11 23:33
 logs: "增加备份命令"
 ---
 
