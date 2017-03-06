@@ -1,60 +1,53 @@
 ---
-title: "Kubernetes @ Huawei Cloud"  
+title: "Kubernetes Huawei Cloud"  
 layout: page  
 date: 2017-03-02 00:00
 ---
 
 [TOC]
 
-# Simiki #
+# Kubernetes #
 
-[![Latest Version](http://img.shields.io/pypi/v/simiki.svg)](https://pypi.python.org/pypi/simiki)
-[![The MIT License](http://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/tankywoo/simiki/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/tankywoo/simiki.svg)](https://travis-ci.org/tankywoo/simiki)
-[![Coverage Status](https://img.shields.io/coveralls/tankywoo/simiki.svg)](https://coveralls.io/r/tankywoo/simiki)
 
-Simiki is a simple wiki framework, written in [Python](https://www.python.org/).
+## Kubernetes Dashboard ##
+[K8s Status](http://35.164.135.254:30557/#/workload?namespace=_all)
 
-* Easy to use. Creating a wiki only needs a few steps
-* Use [Markdown](http://daringfireball.net/projects/markdown/). Just open your editor and write
-* Store source files by category
-* Static HTML output
-* A CLI tool to manage the wiki
+### Autoshift UI ###
 
-Simiki is short for `Simple Wiki` :)
+[Web UI](http://35.164.135.254:30500/)
 
-## Quick Start ##
+## Autoshift API  ##
+[API Cloud9](http://35.164.135.254:30030/)
 
-### Install ###
+### Autoshift Web ###
 
-	pip install simiki
+[Web Cloud9](http://35.164.135.254:30030/)
 
-### Update ###
 
-	pip install -U simiki
+### Autoshift Capacity Planner ###
 
-### Init Site ###
+[Capplanner Cloud9](http://35.164.135.254:30032/)
 
-	mkdir mywiki && cd mywiki
-	simiki init
 
-### Create a new wiki ###
-
-	simiki new -t "Hello Simiki" -c first-catetory
-
-### Generate ###
-
-	simiki g
-
-### Preview ###
-
-	simiki p -w
 
 For more information, `simiki -h` or have a look at [Simiki.org](http://simiki.org)
 
-## Others ##
+## SSH Tunnel ##
 
-* [simiki.org](http://simiki.org)
-* <https://github.com/tankywoo/simiki>
-* Email: <me@tankywoo.com>
-* [Simiki Users](https://github.com/tankywoo/simiki/wiki/Simiki-Users)
+
+```bash
+#!/bin/sh
+
+# ssh tunnel to access services
+ssh -i ~/.ssh/k8s-deploy-key.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 30081:localhost:30081 -L 6379:localhost:30379 -L 2181:localhost:30281 -L 9092:localhost:30092 ubuntu@35.164.135.254 -q -N
+
+```
+
+
+### Redis Commander ###
+[Redis Commander URL](http://localhost:30081/)
+
+### InfluxDB ###
+[InfluxDB Admin UI](http://35.164.135.254:30035/)
+
+### Telegraf ###
