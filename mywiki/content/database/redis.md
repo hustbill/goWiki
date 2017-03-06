@@ -1,5 +1,5 @@
 ---
-title: "redis"
+title: "Redis"
 date: 2017-03-03 19:00
 updated: 2017-03-05 23:33
 logs: "增加备份命令"
@@ -7,7 +7,7 @@ logs: "增加备份命令"
 
 [TOC]
 
-## 常用命令 ##
+## Redis ##
 
 
 - [Introduction](#introduction)
