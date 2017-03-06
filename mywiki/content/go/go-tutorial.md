@@ -1,5 +1,5 @@
 ---
-title: "Go入门笔记"
+title: "Go by Example"
 date: 2016-12-15 22:00
 updated: 2017-01-04 23:00
 log: "增加goroutine & channel"

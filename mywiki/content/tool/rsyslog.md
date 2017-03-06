@@ -1,7 +1,7 @@
 ---
 title: "rsyslog"
-date: 2013-08-22 23:48
-updated: 2016-02-14 18:20
+date: 2016-08-22 23:48
+updated: 2016-12-14 18:20
 collection: "日志管理"
 log: "增加Rainer Script"
 ---
