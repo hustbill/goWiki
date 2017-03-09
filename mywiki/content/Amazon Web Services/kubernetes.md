@@ -1,5 +1,5 @@
 ---
-title: "Amazon Web Services (AWS) @ AWS"  
+title: "Autoshift@ AWS"  
 layout: page  
 date: 2017-03-02 00:00
 ---
