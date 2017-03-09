@@ -1,5 +1,5 @@
 ---
-title: "Python 进程/线程"
+title: "Python Process / Thread"
 date: 2013-08-22 23:48
 ---
 
