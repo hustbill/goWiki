@@ -1,7 +1,6 @@
 ---
 title: "top / htop / atop"
-date: 2013-08-17 07:32
-description: "进程管理监控工具"
+date: 2017-03-07 07:32
 collection: "进程管理"
 ---
 
