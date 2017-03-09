@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes @ Huawei Cloud"  
+title: "Autoshift @ Huawei Cloud"  
 layout: page  
 date: 2017-03-02 00:00
 ---
