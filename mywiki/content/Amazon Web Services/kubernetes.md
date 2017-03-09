@@ -30,8 +30,6 @@ date: 2017-03-02 00:00
 
 
 
-For more information, `simiki -h` or have a look at [Simiki.org](http://simiki.org)
-
 ## SSH Tunnel ##
 
 
