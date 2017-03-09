@@ -14,23 +14,22 @@ date: 2017-03-02 00:00
 
 ### Autoshift UI ###
 
-[Web UI](http://35.164.135.254:30500/)
+[Web UI](http://117.78.60.173:30500)
 
 ## Autoshift API  ##
-[API Cloud9](http://35.164.135.254:30030/)
+[API Cloud9](http://autoshift-k8s.autoshift.us:30030/ide.html)     
+[API Cloud9 by IP](http://117.78.60.173:30030/)
 
 ### Autoshift Web ###
 
-[Web Cloud9](http://35.164.135.254:30030/)
-
+[Web Cloud9](http://autoshift-k8s.autoshift.us:30031/ide.html)  
+[Web Cloud9 by IP](http://117.78.60.173:30031/)
 
 ### Autoshift Capacity Planner ###
 
-[Capplanner Cloud9](http://35.164.135.254:30032/)
+[Capplanner Cloud9](http://autoshift-k8s.autoshift.us:30032/ide.html)  
+[Capplanner Cloud9 by IP](http://117.78.60.173:30032/)
 
-
-
-For more information, `simiki -h` or have a look at [Simiki.org](http://simiki.org)
 
 ## SSH Tunnel ##
 
@@ -39,7 +38,7 @@ For more information, `simiki -h` or have a look at [Simiki.org](http://simiki.o
 #!/bin/sh
 
 # ssh tunnel to access services
-ssh -i ~/.ssh/k8s-deploy-key.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 30081:localhost:30081 -L 6379:localhost:30379 -L 2181:localhost:30281 -L 9092:localhost:30092 ubuntu@35.164.135.254 -q -N
+ssh -i vmall-db.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 9000:localhost:30090 ubuntu@/117.78.60.173 -q -N
 
 ```
 
@@ -48,6 +47,6 @@ ssh -i ~/.ssh/k8s-deploy-key.pem -L 8080:localhost:8080 -L 8086:localhost:30086 
 [Redis Commander URL](http://localhost:30081/)
 
 ### InfluxDB ###
-[InfluxDB Admin UI](http://35.164.135.254:30035/)
+[InfluxDB Admin UI](https://influxdb.autoshift.us/?#)
 
 ### Telegraf ###
