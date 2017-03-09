@@ -6,11 +6,11 @@ date: 2017-03-02 00:00
 
 [TOC]
 
-# Kubernetes #
+# Autoshift #
 
 
 ## Kubernetes Dashboard ##
-[K8s Status](http://35.164.135.254:30557/#/workload?namespace=_all)
+[K8s Dashboard](http://35.164.135.254:30557/#/workload?namespace=_all)
 
 ### Autoshift UI ###
 
