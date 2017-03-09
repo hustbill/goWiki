@@ -14,7 +14,7 @@ spec:
     # the port that this service should serve on
   - port: 8000
     targetPort: 8000
-    nodePort: 30036
+    nodePort: 30041
   selector:
     app: wiki
     tier: frontend
