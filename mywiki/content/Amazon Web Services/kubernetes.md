@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes @ AWS"  
+title: "Amazon Web Services (AWS) @ AWS"  
 layout: page  
 date: 2017-03-02 00:00
 ---
