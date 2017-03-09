@@ -40,6 +40,7 @@ date: 2017-03-02 00:00
 # ssh tunnel to access services
 ssh -i vmall-db.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 9000:localhost:30090 ubuntu@/117.78.60.173 -q -N
 
+# Please find vmall-db.pem in slack
 ```
 
 

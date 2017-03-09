@@ -37,7 +37,9 @@ date: 2017-03-02 00:00
 #!/bin/sh
 
 # ssh tunnel to access services
-ssh -i ~/.ssh/k8s-deploy-key.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 30081:localhost:30081 -L 6379:localhost:30379 -L 2181:localhost:30281 -L 9092:localhost:30092 ubuntu@35.164.135.254 -q -N
+ssh -i k8s-deploy-key.pem -L 8080:localhost:8080 -L 8086:localhost:30086 -L 30081:localhost:30081 -L 6379:localhost:30379 -L 2181:localhost:30281 -L 9092:localhost:30092 ubuntu@35.164.135.254 -q -N
+
+# Please find k8s-deploy-key.pem in slack
 
 ```
 
